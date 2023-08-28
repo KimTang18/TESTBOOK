@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7748f3a2f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav_bar.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/left_panel.css" type="text/css">
+    <link rel="stylesheet" href="./css/middle_panel.css" type="text/css">
+    <link rel="stylesheet" href="./css/right_panel.css" type="text/css">
+    <link rel="stylesheet" href="./css/media.css" type="text/css">
+
+    <title>Linkedin</title>
+</head>
+<body>
+    <!-- Linkedin Na_bar start here -->
+    <header>
+        <nav>
+            <div id="nav-bar">
+                <div id="logo">
+                    <img src="./logo/linkedin.png" alt="logo" title="logo">
+                </div>
+                <div id="search-bar">
+                    <input type="text" name="search_bar" placeholder="Search">
+                </div>
+                <!-- Menu Starts Here -->
+                <div id="navigation-menu">
+                    <div class="nav-icon" id="search-icon" onclick="opensearch()">
+                    </div>
+
+                    <!-- Home -->
+                    <div class="nav-icon active" id="home">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span>Home</span>
+                        <div class="bottom-line"></div>
+                    </div>
+
+                    <!-- Network -->
+                    <div class="nav-icon" id="network">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>My Network</span>
+                    </div>
+
+                    <!-- Job -->
+                    <div class="nav-icon" id="jobs">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span> Jobs</span>
+                    </div>
+
+                    <!-- messaging -->
+                    <div class="nav-icon" id="messaging">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Meassaging</span>
+                    </div>
+
+                    <!-- notifications -->
+                    <div class="nav-icon" id="notifications">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Notifications</span>
+                    </div>
+
+                    <!-- About me -->
+                    <div class="nav-icon" id="about">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <div>
+                            <span>Me</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="divider"></div>
+
+                    <!-- Business -->
+                    <div class="nav-icon" id="business">
+                        <i class="fa-solid fa-grip"></i>
+                        <div>
+                        <span> For Business</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                    <!-- Premium -->
+                    <div class="premium" id="premium">
+                        <a href="#">Try Premium for Free</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Body Start here -->
+    <div id="container-1">
+
+        <!-- Left Panel Start Here -->
+        <div class="left-panel" id="left-panel">
+            
+            <!-- profile info -->
+            <div class="property">
+                <img src="img/back.png" alt="background" id="background">
+                <img src="img/profile.png" alt="profile" id="profile-pic">
+                <div id="name">K2_DEV</div>
+                <div id="post">Full Stack Developer</div>
+
+                <!-- Connections -->
+                <div class="section" id="connections">
+                    <span>
+                        <span id="connection-1">connections</span>
+                        <span id="connection-2"> Connect with alumni</span>
+                    </span>
+                    <i class="fa-solid fa-user-plus fa-beat-fade"></i>
+                </div>
+
+                <!-- premium -->
+                <div class="section" id="promo">
+                    <span>Access exclusive tools & insight</span>
+                    <a href="#">Try Premium for free</a>
+                </div>
+
+                <!-- my items -->
+
+                <div class="section" id="my-item">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span>My items</span>
+                </div>
+            </div>
+
+            <!-- my topic section -->
+
+            <div class="property" id="my-topic">
+                <div id="links">
+                    <div> <a href="#">Groups</a></div>
+                    <div>
+                        <a href="#"> Events </a>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div><a href="#"> Followed Hashtags</a></div>
+                </div>
+                <div id="discover"> Discover More </div>
+            </div>
+        </div>
+
+        <!-- middle panel start herr -->
+
+        <div id="middle-panel">
+
+            <!-- post section -->
+
+            <div class="property" id="posts">
+                <div id="write-post">
+                    <img src="./img/profile.png" alt="profile" title="k2">
+                    <input type="text" name="textarea" id="text-area" placeholder="Start a post">
+                </div>
+                <div id="attachments">
+                    <div id="photo">
+                        <i class="fa-solid fa-image"></i>
+                        <span> Photo</span>
+                    </div>
+                    <div id="video">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span> Video</span>
+                    </div>
+                    <div id="event">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span> Events</span>
+                    </div>
+                    <div id="article">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span>Write article</span>
+                    </div>
+                </div>
+            </div>
+
+                <!-- sorting options -->
+                <div id="sort-option">
+                    <div id="horizontal-divider"></div>
+                    <div id="sort-by"> Sort by: </div>
+                    <div id="sort-type"> Top </div>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+    
+
+                <!-- 1 post start here -->
+
+                <div class="property" id="post-1">
+                    <div class="user">
+                        <div>
+                            <img src="./logo/1683561641594.jpeg" alt="google" title="google" id="google">
+                        </div>
+                        <div class="user-info">
+                            <div class="user-name"> Google </div>
+                            <div class="user-followers">30,881,753</div>
+                            <div class="posted-ago">
+                                <span> 1w</span>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+
+                        <!-- discription -->
+
+                        <div class="description">
+                            Last week, we launched Black Genius Academy: a career exploration app that provides resources and guidance to help people break into the tech industry. Through audio interviews with Black tech leaders, personalized career action plans, and 1:1 coaching support, Black Genius Academy demystifies the tech industry to help learners discover what a career in tech can look like for them. Learn more ⬇️ <a href="#" style="color: blue;">https://goo.gle/3sxhz1c</a>
+                        </div>
+
+                        <div id="post-pics">
+                            <div>
+                                <img src="./img/1692981826538.jpeg" alt="pic" title="googl" id="academy">
+                            </div>
+                        </div>
+
+                    <div id="reactions">
+                        <img src="SVG/like.svg" alt="like" title="like" id="like">
+                        <img src="SVG/empathy.svg" alt="empathy" title="empathy" id="empathy">
+                        <img src="SVG/praise.svg" alt="praise" title="praise" id="praise">
+                        <div class="reaction-number">
+                            <div class="reaction-number">528</div>
+                            <div class="comments-reposts">
+                                <div class="comments">100 comments</div>
+                                <i class="fa-solid fa-circle"></i>
+                                <div class="reposts"> 67 reposts</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="divider"><div></div></div>
+
+                    <div id="reaction-button">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comments</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-retweet"></i>
+                            <span>Reposts</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            <!-- 2 post start here -->
+
+            <div class="property" id="post-2">
+                <div class="user">
+                    <div>
+                        <img src="./logo/1674757963152.jpeg" alt="wipro" title="wipro" id="wipro">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name"> Wipro </div>
+                        <div class="user-followers">7,796,731</div>
+                        <div class="posted-ago">
+                            <span> 3d </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+                    <!-- discription -->
+
+                    <div class="description">
+                        We are thrilled to announce our new partnership with the Indian Institute of Technology (IIT) Delhi and the launch of the Wipro Center of Excellence on Generative AI, which will help us advance foundational and applied research and nurture talent development in the field of generative AI.                     
+                    </div>
+                    <div>
+                        <div id="wip">
+                            <img src="./img/1692720909949.jpeg" alt="pic" title="Wipro" id="wip-pic">
+                        </div>
+                    </div>
+
+                <div id="reactions">
+                    <img src="SVG/like.svg" alt="like" title="like" id="like">
+                    <img src="SVG/empathy.svg" alt="empathy" title="empathy" id="empathy">
+                    <img src="SVG/praise.svg" alt="praise" title="praise" id="praise">
+                    <div class="reaction-number">
+                        <div class="reaction-number">3401</div>
+                        <div class="comments-reposts">
+                            <div class="comments">64 comments</div>
+                            <i class="fa-solid fa-circle"></i>
+                            <div class="reposts"> 197 reposts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="divider-2"><div></div></div>
+
+                <div id="reaction-button">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        <span>Comments</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-retweet"></i>
+                        <span>Reposts</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Send</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+                <!-- Right Panel starts here  -->
+
+                <div id="right-panel">
+
+                    <!-- LinkedIn News Section -->
+        
+                    <div class="property" id="news-section">
+        
+                        <!-- LinkedIn News -->
+        
+                        <div id="news-heading">
+                            <span> LinkedIn News </span>
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+        
+                        <!-- News 1 -->
+        
+                        <div id="news">
+                            <div id="news-1">
+                                <div class="news-info">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> Zepto become a unicorn </span>
+                                </div>
+                                <div class="reader-info">
+                                    <span> Top news </span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> 1,525 readers </span>
+                                </div>
+                            </div>
+        
+                            <!-- News 2 -->
+        
+                            <div id="news-2">
+                                <div class="news-info">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> Form Armed Forcesb to corporate </span>
+                                </div>
+                                <div class="reader-info">
+                                    <span> 2d ago </span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> 380 readers </span>
+                                </div>
+                            </div>
+        
+                            <!-- News 3 -->
+        
+                            <div id="news-3">
+                                <div class="news-info">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> SBi Life to hire thousands </span>
+                                </div>
+                                <div class="reader-info">
+                                    <span> 3d ago </span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> 1,630 readers </span>
+                                </div>
+                            </div>
+        
+                            <!-- News 4 -->
+        
+                            <div id="news-4">
+                                <div class="news-info">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> Smaller cities set for aviation boom </span>
+                                </div>
+                                <div class="reader-info">
+                                    <span> 2d ago </span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> 1,555 readers </span>
+                                </div>
+                            </div>
+        
+                            <!-- News 5 -->
+        
+                            <div id="news-5">
+                                <div class="news-info">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> Microfinance on growth path </span>
+                                </div>
+                                <div class="reader-info">
+                                    <span> 2d ago </span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <span> 499 readers </span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- show more button -->
+        
+                        <div id="show-more">
+                            <span> Show more </span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+        
+                    <!-- Add to Your Feed Section -->
+        
+                    <div class="property" id="follow-more">
+                        <div id="news-heading">
+                            <span> Add to your feed </span>
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+        
+                        <!-- ISRO -->
+        
+                        <div class="companies">
+                            <div>
+                                <img src="./logo/Indian_Space_Research_Organisation_Logo.svg.png" alt="ISRO" title="ISRO">
+                            </div>
+                            <div>
+                                <div class="company-name"> ISRO </div>
+                                <div class="company-role">
+                                    Space technology in the Service of humankind”
+                                </div>
+                                <div class="company-followers"> 196k followers </div>
+                            </div>
+                        </div>
+        
+                        <!-- Follow Button -->
+        
+                        <div class="follow-button-container">
+                            <button class="follow-button">
+                                <div>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span> Follow </span>
+                                </div>
+                            </button>
+                        </div>
+        
+                        <div id="company-divider"> <div></div> </div>
+        
+                        <!-- Microsoft -->
+        
+                        <div class="companies">
+                            <div>
+                                <img src="./logo/microsoft-logo-design-template-d9518f226f2a7df0d26cd8eddcb3f8d9_screen.jpg" alt="Microsoft" title="Microsoft">
+                            </div>
+                            <div>
+                                <div class="company-name"> Microsoft </div>
+                                <div class="company-role">
+                                    Software Development
+                                </div>
+                                <div class="company-followers"> 20M followers </div>
+                            </div>
+                        </div>
+        
+                        <!-- Follow Button -->
+        
+                        <div class="follow-button-container">
+                            <button class="follow-button">
+                                <div>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span> Follow </span>
+                                </div>
+                            </button>
+                        </div>
+        
+                        <div id="company-divider"> <div></div> </div>
+        
+                        <!-- Samsung -->
+        
+                        <div class="companies">
+                            <div>
+                                <img src="./logo/samsung-logo.png" alt="Samsung" title="Samsung">
+                            </div>
+                            <div>
+                                <div class="company-name"> Samsung Electronics </div>
+                                <div class="company-role">
+                                    Computers and Electronics Manufacturing
+                                </div>
+                                <div class="company-followers"> 10M followers </div>
+                            </div>
+                        </div>
+        
+                        <!-- Follow Button -->
+        
+                        <div class="follow-button-container">
+                            <button class="follow-button">
+                                <div>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span> Follow </span>
+                                </div>
+                            </button>
+                        </div>
+        
+                        <div id="company-divider"> <div></div> </div>
+        
+                        <!-- jio -->
+        
+                        <div class="companies">
+                            <div>
+                                <img src="./logo/Reliance_Jio_Logo_(October_2015).svg.png" alt="jio" title="jio">
+                            </div>
+                            <div>
+                                <div class="company-name"> Jio </div>
+                                <div class="company-role">
+                                    Telecommunications
+                                </div>
+                                <div class="company-followers"> 1M followers </div>
+                            </div>
+                        </div>
+        
+                        <!-- Follow Button -->
+        
+                        <div class="follow-button-container">
+                            <button class="follow-button">
+                                <div>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span> Follow </span>
+                                </div>
+                            </button>
+                        </div>
+        
+                        <div id="company-divider"> <div></div> </div>
+        
+                        <!-- Apple -->
+        
+                        <div class="companies">
+                            <div>
+                                <img src="./logo/apple_logo-freelogovectors.net_-1.webp" alt="Apple" title="Apple">
+                            </div>
+                            <div>
+                                <div class="company-name"> Apple </div>
+                                <div class="company-role">
+                                    Computers and Electronics Manufacturing
+                                </div>
+                                <div class="company-followers"> 18M followers </div>
+                            </div>
+                        </div>
+        
+                        <!-- Follow Button -->
+        
+                        <div class="follow-button-container">
+                            <button class="follow-button">
+                                <div>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span> Follow </span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+    
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
